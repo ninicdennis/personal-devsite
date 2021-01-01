@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Doggobot</title>
+    <link>https://www.ninicdennis.github.io/blog/</link>
+    <description>Recent content in Blogs on Doggobot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 31 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ninicdennis.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal Developer Equipment</title>
+      <link>https://www.ninicdennis.github.io/blog/equipment/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ninicdennis.github.io/blog/equipment/</guid>
+      <description>Afternoon,
+I thought as an Initial post I would create a post talking about my development gear. From time to time, I always get people asking me why I choose to use my certain laptop, keyboard, etc. and I thought this would be a great time to give a rundown on why I use it, and why I have not upgraded in a long time.
+As a tl;dr, here is a simple rundown:</description>
+    </item>
+    
+    <item>
+      <title>Personal NAS / Plex / E-book server - Part 1</title>
+      <link>https://www.ninicdennis.github.io/blog/server-build-part-1/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ninicdennis.github.io/blog/server-build-part-1/</guid>
+      <description>Afternoon,
+Today, I wanted to talk about a future plan I have going on right now. Recently, I had found a Dell R640 for VERY cheap, but my main issue is where the server rack is located, I can not have it running at certain times, as it is very very loud. I am currently in the process of moving this specific server to a place where noise wouldn&amp;rsquo;t be an issue.</description>
+    </item>
+    
+  </channel>
+</rss>

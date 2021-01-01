@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full stack web and app developer personal site and blog.">
+    <meta name="Author" content="Dennis Ninic">
+    <meta name="keywords" content="developer">
+    <link rel="stylesheet" href=https://www.ninicdennis.github.io/css/syntax.css>
+    <link rel="stylesheet" href=https://www.ninicdennis.github.io/css/style.css>
+    <script src="https://kit.fontawesome.com/1b7478c139.js" crossorigin="anonymous"></script>
+    <title>Doggobot</title>
+  </head><body><aside id="sidenav">
+    <header>
+    
+        <a href=https://www.ninicdennis.github.io><img src="https://www.ninicdennis.github.io/avatar.png" alt="avatar"></a>
+        
+    
+
+    <a id="branding" href=https://www.ninicdennis.github.io>
+        
+            Doggobot
+        
+    </a>
+    </header>
+
+    <nav>
+        
+            		
+            <a href="/"
+                
+            >
+                <i class="fas fa-home fa-sm"></i>
+                <span>home</span>
+            </a>
+        
+            		
+            <a href="/blog/"
+                
+            >
+                <i class="fas fa-keyboard fa-ms"></i>
+                <span>blog</span>
+            </a>
+        
+            		
+            <a href="https://github.com/ninicdennis"
+                
+                    target="_blank"
+                
+            >
+                <i class="fab fa-github fa-ms"></i>
+                <span>github</span>
+            </a>
+        
+            		
+            <a href="/about"
+                
+            >
+                <i class="far fa-user"></i>
+                <span>about</span>
+            </a>
+        
+            		
+            <a href="/contact"
+                
+            >
+                <i class="far fa-envelope"></i>
+                <span>contact</span>
+            </a>
+        
+    </nav>
+</aside>
+<main id="main">
+            <a href="javascript:void(0)" id="closebtn" onclick="navToggle()"><i class="fas fa-bars fa-lg"></i></a>
+            <div class="content">
+    
+    <h1 id="title">Personal NAS / Plex / E-book server - Part 1</h1>
+    
+      
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#case---rosewill-rsv-2600">Case - Rosewill RSV-2600</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#cpu">CPU</a></li>
+        <li><a href="#cpu-cooler">CPU Cooler</a></li>
+        <li><a href="#ram-and-motherboard">RAM and Motherboard</a></li>
+        <li><a href="#power-supply">Power Supply</a></li>
+        <li><a href="#storage">Storage</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    <p>Afternoon,</p>
+<p>Today, I wanted to talk about a future plan I have going on right now. Recently, I had found a Dell R640 for VERY cheap, but my main issue is where the server rack is located, I can not have it running at certain times, as it is very very loud. I am currently in the process of moving this specific server to a place where noise wouldn&rsquo;t be an issue. As a solution, I wanted to build a relatively cheap, quiet server for Plex, Audio, Ebook and NAS, as well as mess around with some other self hosted programs.</p>
+<h3 id="case---rosewill-rsv-2600">Case - Rosewill RSV-2600</h3>
+<p>The <a href="https://www.amazon.com/Rosewill-Rackmount-Computer-Pre-Installed-RSV-L4500/dp/B00EW0K8LU/ref=pd_sbs_4?pd_rd_w=ERcli&amp;pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&amp;pf_rd_r=0EC6V8GJNAV018SP59JS&amp;pd_rd_r=e449c9df-d486-4589-813b-e22f14354627&amp;pd_rd_wg=DbWga&amp;pd_rd_i=B0091IZ1ZG&amp;th=1">Rosewill RSV-2600</a> seemed pretty adequate for the job here. I wanted something relatively small height wise, but still have a decent amount off storage options, and thats when I came across this case. At $99.99, it seemed like a no brainer here. The only downside i&rsquo;ve heard is that the triple fans included can be a bit loud, but I intend to replace these.</p>
+<p><img src="../../images/rosewill-RSV-2600.jpg" alt="Rosewill RSV-2600"></p>
+<h1 id="motherboard-cpu-and-ram">Motherboard, CPU and RAM</h1>
+<p>For this section, I primarily followed <a href="https://forums.serverbuilds.net/t/guide-nas-killer-4-0-fast-quiet-power-efficient-and-flexible-starting-at-125/667/12">this guide</a> on selecting these specific parts. That guide already has an incredible amount of information on what to grab, so I will just briefly go over my choices.</p>
+<h3 id="cpu">CPU</h3>
+<p>I have decided to go with the Intel Xeon E3-1270V2. A little bit of an older CPU, being released in 2012, but for my application, this should suffice. It has 4 cores, 8 threads, so enough to run enough a few docker containers with no issue.</p>
+<h3 id="cpu-cooler">CPU Cooler</h3>
+<p>For this, I have chosen the <a href="https://pcpartpicker.com/product/fhqbt6/noctua-cpu-cooler-nhl9x65">Noctua NH-L9x65</a> Low profile CPU cooler. I am a huge Noctua fanboy, and my current workstation has 2 of their AF12 fans. For how ugly they truly are, they offer some of the best and most silent performance. I have used the slightly smaller version of this cooler, the NH-L9i, and had no complaints. I believe this should handle the processor at load no problem, and still fit in the case with enough clearance to actually close it. At $50.00, it was a no brainer for me personally.</p>
+<h3 id="ram-and-motherboard">RAM and Motherboard</h3>
+<p>For the RAM and motherboard, I have chosen a Samsung DDR3 ECC 16 GB kit (Nothing special there), and a Supermicro X9SCM-F mATX motherboard. The motherboard I specifically chose felt it had enough enterprise level features available, as well as enough SATA ports if I would like to populate this entire server. There is probably more I am missing, and thats alright, I&rsquo;ll trust the guide I linked above enough.</p>
+<h3 id="power-supply">Power Supply</h3>
+<p>For the power supply, I am just going to pick up a <a href="https://www.amazon.com/gp/product/B00H33SFJU/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&amp;psc=1">500W EVGA Bronze</a> power supply. I&rsquo;ve used them in the past with no issue, and should just work. Nothing really special here.</p>
+<h3 id="storage">Storage</h3>
+<p>For storage, I am going to be using just some spare drives around. I have a 6TB WD Black I got from a bundle deal on a processor, and a 1TB SSD for boot. Again, nothing special at all.</p>
+<p><img src="../../images/parts.PNG" alt="Parts"></p>
+<h1 id="conclusion">Conclusion</h1>
+<p>As you can see, this is part one of this &ldquo;series&rdquo;. I am waiting for a little bit more funding to actually start this project up, I just wanted to have my parts layed out clear to keep track of this machine. As a conclusion, I will share a few of my self hosted projects I would like to try.</p>
+<p><a href="https://github.com/RobinLinus/snapdrop">Snapdrop</a> - Self hosted local file sharing, looked pretty interesting.</p>
+<p><a href="https://github.com/hkalexling/Mango">Mango</a> - Self hosted manga web reader.</p>
+<p><a href="https://github.com/owncast/owncast">Owncast</a> - Personal live streaming.</p>
+<p><a href="https://github.com/bastienwirtz/homer">Homer</a> - Static Homepage for self hosting.</p>
+<p><a href="https://funkwhale.audio/">Funkwhale</a> - Audio streaming service from local files.</p>
+<p>&ndash; Doggobot</p>
+
+    
+    <div class="nav-next-prev">
+        <div class="nav-prev">
+            
+                <a class="grayed-out" href="javascript:void()"><i class="fas fa-chevron-left"></i></a>
+            
+        </div>
+        <a class="nav-top" href="#">top</i></a>
+        <div class="nav-next">
+            
+                <a href="https://www.ninicdennis.github.io/blog/equipment/"><i class="fas fa-chevron-right"></i></a>
+            
+        </div>
+    </div>
+    
+
+            </div><footer>
+<div class="footer-content">
+
+  <div class="contact-info">
+      
+          <div class="footer-mail">
+          <i class="far fa-envelope"></i> <a href="mailto:ninicdennis@gmail.com">ninicdennis@gmail.com</a> </div>
+      
+      
+  </div>
+
+
+<p class="copyright meta">Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</p>
+
+</div>
+</footer></main>
+    </body>
+    <script src=https://www.ninicdennis.github.io/js/navbutton.js></script>
+</html>
